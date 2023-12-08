@@ -1,7 +1,7 @@
 ---
 import Item from "../components/Item.astro";
 import ItemWithImg from "../components/ItemWithImg.astro";
-import ItemWithUrl from "../components/Item.astro";
+import ItemWithUrl from "../components/ItemWithUrl.astro";
 import Tableheader from "../components/Tableheader.astro";
 import Line from "../components/Line.astro";
 ---
@@ -30,7 +30,7 @@ import Line from "../components/Line.astro";
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
       >
-      <Item title="强化学习" description="深度学习" />
+      <Item title="一个主页" description="希望大家可以更方便的学习人工智能！" />
       <Item title="联系方式" description="QQ群: 690945670" />
       </div>
 
@@ -53,26 +53,28 @@ import Line from "../components/Line.astro";
       >
       <ItemWithImg title="Kaggle", description="数据挖掘竞赛平台", url="https://www.kaggle.com/" img="https://www.kaggle.com/static/images/site-logo.svg"/>
       <ItemWithImg title="DataFountain", description="数据科学创新平台", url="https://www.datafountain.cn/" img="../img/DataFountain.png"/>
-      <ItemWithImg title="2023 腾讯开悟人工智能全国公开赛", description="量化", url="https://aiarena.tencent.com/aiarena/zh/match/open-competition-2023" img="../img/aiarena_tencent.png"/>
+      <ItemWithImg title="2023 腾讯开悟人工智能全国公开赛", description="强化学习", url="https://aiarena.tencent.com/aiarena/zh/match/open-competition-2023" img="../img/aiarena_tencent.png"/>
       <ItemWithImg title="网易伏羲-全明星街球派对AI竞赛", description="强化学习", url="https://fuxi.163.com/competition/DunkCity" img="https://fuxi.163.com/_next/static/media/fuxi_logo_blue.0b0359e9.png"/>
       <ItemWithImg title="九坤量化联赛第三期", description="股票模拟交易赛", url="https://mp.weixin.qq.com/s/JIm9pj3ouvwyQBcdoxQgWg" img="../img/ubiquant.png"/>
       <ItemWithImg title="Numer.ai", description="量化", url="https://numer.ai/homepage/" img="../img/numerai_logo.png"/>
       <ItemWithImg title="百模千态开源大模型AI挑战赛", description="华为开发者大赛", url="https://competition.huaweicloud.com/information/1000041979/circumstance" img="https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/HWCdeveloper/navi/PClogonew.svg"/>
       <ItemWithImg title="2023年电力行业AI创新大赛", description="电力行业", url="https://ai.csg.cn/#/dev/home", img="https://ai.csg.cn/static/img/logo2.82647438.png"/>
+      <ItemWithImg title="ATEC 2023", description="大语言模型", url="https://www.atecup.cn/home", img="../img/ATEC.png"/>
       </div>
 
       <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">学习资源</h2>
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
       >
-      <ItemWithUrl title="ML-For-Beginners - Microsoft" description="机器学习" url="https://microsoft.github.io/ML-For-Beginners/#/" />
       <ItemWithUrl title="Kaggle" description="机器学习" url="https://www.kaggle.com/" />
       <ItemWithUrl title="动手学强化学习" description="强化学习" url="https://hrl.boyuai.com/" />
       <ItemWithUrl title="OpenAI - Spiningup" description="强化学习" url="https://spinningup.openai.com/en/latest/index.html" />
       <ItemWithUrl title="Easy-RL - Datawhale" description="强化学习" url="https://datawhalechina.github.io/easy-rl/" />
       <ItemWithUrl title="动手学深度学习" description="深度学习" url="https://courses.d2l.ai/zh-v2/" />
-      <ItemWithUrl title="Probabilistic Machine Learning: An Introduction" description="深度学习" url="https://probml.github.io/pml-book/book1.html" />
+      <ItemWithUrl title="Probabilistic Machine Learning" description="深度学习" url="https://probml.github.io/pml-book/book1.html" />
       <ItemWithUrl title="AAAMLP - 中译版" description="深度学习" url="https://ytzfhqs.github.io/AAAMLP-CN/" />
+      <ItemWithUrl title="Awesome-Chinese-LLM" description="大语言模型" url="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM" />
+      <ItemWithUrl title="LLM-Universe" description="大语言模型" url="https://datawhalechina.github.io/llm-universe/" />
       <ItemWithUrl title="DataWhale" description="综合" url="https://www.datawhale.club/home#/" />
       <ItemWithUrl title="天池学习" description="综合" url="https://tianchi.aliyun.com/course" />
       <ItemWithUrl title="AI Expert Roadmap" description="综合" url="https://i.am.ai/roadmap" />
@@ -81,9 +83,10 @@ import Line from "../components/Line.astro";
       <ItemWithUrl title="百度飞桨" description="综合" url="https://aistudio.baidu.com/course" />
       
       
+      
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">俱乐部表格</h2>
+      <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">比赛列表</h2>
       <div class="bg-white rounded-lg shadow p-6">
         <table class="table-auto w-full">
           <thead>
@@ -98,6 +101,7 @@ import Line from "../components/Line.astro";
             <Line title="Numer.ai", description="量化", url="https://numer.ai/homepage/" />
             <Line title="百模千态开源大模型AI挑战赛", description="华为开发者大赛", url="https://competition.huaweicloud.com/information/1000041979/circumstance" />
             <Line title="2023年电力行业AI创新大赛", description="电力行业", url="https://ai.csg.cn/#/dev/home"/>
+            <Line title="ATEC 2023", description="大语言模型", url="https://www.atecup.cn/home"/>
           </tbody>
         </table>
       </div>
