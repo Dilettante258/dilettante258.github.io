@@ -1,59 +1,72 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
-import Header from '../components/Header.astro';
+import Header from "../components/Header.astro";
 const pageTitle = "关于我";
 const identity = {
   github: "https://github.com/Dilettante258",
   blog: "https://www.dilettante258.cyou/",
   CSDN: "https://blog.csdn.net/Admire0v0",
   bilibili: "https://space.bilibili.com/103940105",
-  kaggle: "https://www.kaggle.com/dilettante258"
+  kaggle: "https://www.kaggle.com/dilettante258",
 };
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 ---
 
 <html lang="zh">
-	<head>
-		<meta charset="utf-8" />
-		<!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-		<link rel="icon" media="(prefers-color-scheme:light)" href="./img/1.png" type="image/png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-
-		<h1>关于</h1>
-        <h2>这个网站采用了 Astro 前段框架，移植于来自 Jekyll 的<a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> 主题！</h2>
-		<style>
-			h1 {
-			  color: purple;
-			  font-size: 4rem;
-			}
-		  </style>
-		<p>以下是我的一些网站传送链接：</p>
-		<ul>
-			<li><strong>Github</strong>: <a href={identity.github}>链接</a></li>
-			<li><strong>浅尝辄止(My Blog)</strong>: <a href={identity.blog}>链接</a></li>
-			<li><strong>CSDN</strong>: <a href={identity.CSDN}>链接</a></li>
-			<li><strong>Bilibili</strong>: <a href={identity.bilibili}>链接</a></li>
-			<li><strong>Kaggle</strong>: <a href={identity.kaggle}>链接</a></li>
-		</ul>
-		<p>我的技能是：</p>
-		<ul>
-			<li>Python</li>
-			<ul>
-				<li>PyTorch</li>
-				<li>Flask</li>
-				<li>scikit-learn</li>
-			</ul>
-			<li>Linux</li>
-			<li>C</li>
-			<li>Matlab</li>
-			<li>Git</li>
-		</ul>
-		<Header />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <link
+      rel="icon"
+      media="(prefers-color-scheme:light)"
+      href="./img/1.png"
+      type="image/png"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <h1>关于</h1>
+    <h2>
+      这个网站采用了 Astro 前段框架，移植于来自 Jekyll 的<a
+        href="https://github.com/yaoyao-liu/minimal-light"
+        target="_blank"
+        rel="noopener">Minimal Light</a
+      > 主题！
+    </h2>
+    <style>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+    </style>
+    <p>以下是我的一些网站传送链接：</p>
+    <ul>
+      <li><strong>Github</strong>: <a href={identity.github}>链接</a></li>
+      <li>
+        <strong>浅尝辄止(My Blog)</strong>: <a href={identity.blog}>链接</a>
+      </li>
+      <li><strong>CSDN</strong>: <a href={identity.CSDN}>链接</a></li>
+      <li><strong>Bilibili</strong>: <a href={identity.bilibili}>链接</a></li>
+      <li><strong>Kaggle</strong>: <a href={identity.kaggle}>链接</a></li>
+    </ul>
+    <p>我的技能是：</p>
+    <ul>
+      <li>Python</li>
+      <ul>
+        <li>PyTorch</li>
+        <li>Flask</li>
+        <li>scikit-learn</li>
+      </ul>
+      <li>Linux</li>
+      <li>C</li>
+      <li>Matlab</li>
+      <li>Git</li>
+	  <li>Astro</li>
+    </ul>
+    <Header />
+  </body>
 </html>

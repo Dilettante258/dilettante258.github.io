@@ -1,0 +1,9 @@
+---
+const { title, description, url } = Astro.props;
+---
+
+<tr>
+    <td class="border px-4 py-2"><strong>{title}</strong></td>
+    <td class="border px-4 py-2">{description}</td>
+    <td class="border px-4 py-2"><a href={url} target="_blank">链接</td>
+  </tr>

@@ -1,0 +1,14 @@
+---
+const { title, description, url, img } = Astro.props;
+---
+<div class="bg-white rounded-lg shadow p-6">
+    <img
+      src={img}
+      alt="Competition"
+      class="w-full mb-4"
+    />
+    <h3 class="text-lg font-bold text-gray-800">{title}</h3>
+    <p class="text-gray-600">时间: 2022年4月</p>
+    <p class="text-gray-600">主办方: 456公司</p>
+  </div>
+</div>
