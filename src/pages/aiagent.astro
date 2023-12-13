@@ -9,16 +9,23 @@ import Line from "../components/Line.astro";
 ---
 
 <!doctype html>
-<html lang="hc">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>高级智能体</title>
     <link
     rel="icon"
-    href="../img/1.png"
+    media="(prefers-color-scheme:dark)"
+    href="../img/2.png"
     type="image/png"
-  />
+    />
+    <link
+      rel="icon"
+      media="(prefers-color-scheme:light)"
+      href="../img/1.png"
+      type="image/png"
+    />
   </head>
 
   <body class="bg-gray-100">
@@ -63,8 +70,6 @@ import Line from "../components/Line.astro";
       <ItemWithImg title="百模千态开源大模型AI挑战赛", description="华为开发者大赛", url="https://competition.huaweicloud.com/information/1000041979/circumstance" img="https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/HWCdeveloper/navi/PClogonew.svg"/>
       <ItemWithImg title="2023年电力行业AI创新大赛", description="电力行业", url="https://ai.csg.cn/#/dev/home", img="https://ai.csg.cn/static/img/logo2.82647438.png"/>
       <ItemWithImg title="ATEC 2023", description="大语言模型", url="https://www.atecup.cn/home", img="../img/ATEC.png"/>
-      
-      https://www.heywhale.com/home/competition
       </div>
 
       <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">学习资源</h2>
@@ -85,6 +90,7 @@ import Line from "../components/Line.astro";
       <ItemWithUrl title="DataWhale" description="综合" url="https://www.datawhale.club/home#/" />
       <ItemWithUrl title="天池学习" description="综合" url="https://tianchi.aliyun.com/course" />
       <ItemWithUrl title="和鲸社区" description="综合" url="https://www.heywhale.com/home/project" />
+      <ItemWithUrl title="伯禹人工智能学院" description="综合" url="https://www.boyuai.com/elites/" />
       <ItemWithUrl title="AI Expert Roadmap" description="综合" url="https://i.am.ai/roadmap" />
       <ItemWithUrl title="华为云开发者学堂" description="综合" url="https://edu.huaweicloud.com/courses" />
       <ItemWithUrl title="DataFountain Lab(推荐)" description="综合" url="https://lab.datafountain.cn/" />
