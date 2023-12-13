@@ -2,6 +2,9 @@
 import "../styles/global.css";
 import "../styles/font_sans_serif.css";   
 import Header from "../components/Header.astro";
+import Icon from "../components/icon.astro";
+import GoogleAnalyse from "../components/GoogleAnalyse.astro";
+
 const pageTitle = "关于我";
 const identity = {
   github: "https://github.com/Dilettante258",
@@ -17,13 +20,8 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 <html lang="zh">
   <head>
     <meta charset="utf-8" />
-    <!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-    <link
-      rel="icon"
-      media="(prefers-color-scheme:light)"
-      href="./img/1.png"
-      type="image/png"
-    />
+    <Icon />
+    <GoogleAnalyse />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
