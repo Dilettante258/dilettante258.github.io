@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/crimson-pro": "^5.0.17",
     "astro": "^4.0.3"
   }
 }

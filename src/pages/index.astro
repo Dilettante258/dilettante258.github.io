@@ -33,18 +33,19 @@ import Icon from "../components/icon.astro";
   <body>
     <div class="wrapper">
       <header>
-        <a class="image avatar"><img src="./img/avatar.png" alt="avatar" /></a>
+        <a class="image avatar"><img src="./img/avatar.png" alt="avatar" style="
+          width:200px; height:200px;"/></a>
 
         <h1>Yiming Wang</h1>
 
         <position style="font-size:1.10rem;">Undergraduate Student</position>
         <br />
 
-        <a href="http://www.njupt.edu.cn/" rel="noopener">
+        <a href="http://www.njupt.edu.cn/" target="_blank" rel="noopener">
           <autocolor>
             Nanjing University of Posts and Telecommunications
-          </autocolor></a
-        >
+          </autocolor>
+        </a>
         <br />
 
         <email>wang1m@outlook.com</email>
@@ -57,11 +58,11 @@ import Icon from "../components/icon.astro";
           <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
         </a>  -->
 
-          <a style="margin: 0 5px 0 0" href="./files/curriculum_vitae.pdf">
+          <a style="margin: 0 5px 0 0" href="./files/curriculum_vitae.pdf" target="_blank">
             <i class="ai ai-cv" style="font-size:1.3rem;"></i>
           </a>
 
-          <a style="margin: 0 5px 0 0" href="https://github.com/Dilettante258">
+          <a style="margin: 0 5px 0 0" href="https://github.com/Dilettante258" target="_blank">
             <i class="fab fa-github"></i>
           </a>
 
@@ -74,7 +75,7 @@ import Icon from "../components/icon.astro";
 
           <a
             style="margin: 0 0 0 0"
-            href="https://space.bilibili.com/103940105"
+            href="https://space.bilibili.com/103940105"  target="_blank"
           >
             <i class="fa-brands fa-bilibili"></i>
           </a>
@@ -89,9 +90,9 @@ import Icon from "../components/icon.astro";
           I am a second year student majoring in Data Science at Nanjing
           University of Posts and Telecommunications. And now I'm doing some
           research on offline MBRL under the supervision of Ph. <a
-            href="https://shangdongyang.github.io/">Shangdong Yang</a
+            href="https://shangdongyang.github.io/" target="_blank">Shangdong Yang</a
           >. I regularly write blog on my website <a
-            href="https://www.dilettante258.cyou/">dilettante258.cyou</a
+            href="https://www.dilettante258.cyou/" target="_blank">dilettante258.cyou</a
           >.
         </p>
 
@@ -126,8 +127,7 @@ import Icon from "../components/icon.astro";
 
         <ul>
           <li>
-            <strong
-              ><a href="https://github.com/Dilettante258/TiebaCrawler"
+            <strong><a href="https://github.com/Dilettante258/TiebaCrawler" target="_blank"
                 >TiebaCrawler</a
               ></strong
             >(2023.01): A Baidu Tieba crawler that utilizes Flask to achieve
@@ -135,9 +135,8 @@ import Icon from "../components/icon.astro";
             clouds and distribution pie charts.
           </li>
           <li>
-            <strong
-              ><a
-                href="https://github.com/Dilettante258/Canteen-Management-System"
+            <strong><a
+                href="https://github.com/Dilettante258/Canteen-Management-System" target="_blank"
                 >Canteen Management System</a
               ></strong
             >(2023.04): The programming course production utilized C language as
@@ -147,7 +146,7 @@ import Icon from "../components/icon.astro";
           <li>
             <strong
               ><a
-                href="https://github.com/Dilettante258/dilettante258.github.io"
+                href="https://github.com/Dilettante258/dilettante258.github.io" target="_blank"
                 >My personal homepage</a
               ></strong
             >(2023.12): I learned Astro and used it to rewrite a theme, and
@@ -160,7 +159,11 @@ import Icon from "../components/icon.astro";
 
         <p>
           <small
-            >Powered by Astro and modified from <a
+            >Powered by <a
+            href="https://astro.build/"
+            target="_blank"
+            rel="noopener">Astro</a
+          > and modified from <a
               href="https://github.com/yaoyao-liu/minimal-light"
               target="_blank"
               rel="noopener">Minimal Light</a
